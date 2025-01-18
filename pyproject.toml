@@ -1,0 +1,70 @@
+[tool.poetry]
+name = "aws-api-actions"
+version = "0.1.0"
+description = "Compiles and generates datasets for the AWS API actions for all services."
+authors = ["xransum <xransum@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+classifiers = ["Programming Language :: Python :: 3.11"]
+
+[tool.poetry.urls]
+Changelog = "https://github.com/xransum/valkyrie-tools/releases"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+beautifulsoup4 = "^4.12.2"
+types-requests = "^2.31.0"
+types-beautifulsoup4 = "^4.12.0"
+requests = "^2.32.3"
+nox = ">=2020.8.22"
+nox-poetry = "^1.0.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+coverage = { extras = ["toml"], version = ">=6.3" }
+safety = "^3.2.14"
+mypy = "^1.14.1"
+typeguard = "^4.4.1"
+flake8 = "^7.1.1"
+black = "^24.10.0"
+flake8-bandit = "^4.1.1"
+flake8-bugbear = "^24.12.12"
+flake8-docstrings = "^1.7.0"
+flake8-rst-docstrings = "^0.3.0"
+darglint = { version = ">=1.8.1", python = "< 4" }
+poetry = "<2.0.0"
+typing-extensions = "^4.12.2"
+isort = "^5.13.2"
+pygments = "^2.19.1"
+pre-commit = "^4.0.1"
+
+[tool.poetry.scripts]
+build = "aws_api_actions.aws_api_actions:build"
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["aws_api_actions"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 100
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore::DeprecationWarning:future.*", # imp: in favour of importlib
+]
+
+[tool.black]
+line-length = 80
+
+[tool.isort]
+profile = "black"
+lines_after_imports = 2
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
