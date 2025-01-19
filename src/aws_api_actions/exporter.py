@@ -83,9 +83,7 @@ def output_to_json(
     pass
 
 
-def output_to_csv(
-    file_path: str, data: Dict[str, Dict[str, List[str]]]
-) -> None:
+def output_to_csv(file_path: str, data: Dict[str, Dict[str, List[str]]]) -> None:
     """Export the data as an csv file.
 
     Args:
@@ -95,9 +93,7 @@ def output_to_csv(
     pass
 
 
-def output_to_xml(
-    file_path: str, data: Dict[str, Dict[str, List[str]]]
-) -> None:
+def output_to_xml(file_path: str, data: Dict[str, Dict[str, List[str]]]) -> None:
     """Export the data as an xml file.
 
     Args:

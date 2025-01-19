@@ -1,10 +1,19 @@
 from typing import List
 
-import requests
 from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
 
 from aws_api_actions.constants import USER_AGENT
-from aws_api_actions.geckodriver import is_geckodriver_installed
+from aws_api_actions.geckodriver import (
+    get_firefox_binary_path,
+    get_geckodriver_binary_path,
+    is_geckodriver_installed,
+)
 from aws_api_actions.logger import logger
 
 
@@ -20,19 +29,6 @@ if is_geckodriver_installed() is False:
 # page = get_soup(req)
 
 # services_list = page.find("h6", string="Services")
-
-
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.firefox.options import Options
-from selenium.webdriver.firefox.service import Service
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
-
-from aws_api_actions.geckodriver import (
-    get_firefox_binary_path,
-    get_geckodriver_binary_path,
-)
 
 
 def setup_webdriver(
