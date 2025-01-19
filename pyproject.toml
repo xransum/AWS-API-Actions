@@ -5,7 +5,6 @@ description = "Compiles and generates datasets for the AWS API actions for all s
 authors = ["xransum <xransum@users.noreply.github.com>"]
 license = "MIT"
 readme = "README.md"
-package-mode = false
 classifiers = ["Programming Language :: Python :: 3.11"]
 
 [tool.poetry.urls]
@@ -19,6 +18,8 @@ types-beautifulsoup4 = "^4.12.0"
 requests = "^2.32.3"
 nox = ">=2020.8.22"
 nox-poetry = "^1.0.3"
+colorlog = "^6.9.0"
+selenium = "^4.27.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.4"
@@ -38,9 +39,10 @@ typing-extensions = "^4.12.2"
 isort = "^5.13.2"
 pygments = "^2.19.1"
 pre-commit = "^4.0.1"
+pytype = "^2024.10.11"
 
 [tool.poetry.scripts]
-build = "aws_api_actions.aws_api_actions:build"
+gecko_install = "aws_api_actions.geckodriver:install_geckodriver"
 
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]
