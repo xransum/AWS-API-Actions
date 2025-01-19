@@ -55,7 +55,7 @@ def write_to_file(file_path: str, contents: str) -> None:
         file_path (str): The path to the file to write to.
         contents (str): The contents to write to the file.
     """
-    with open(file_path, "w") as file:
+    with open(file_path, "w", encoding="utf-8") as file:
         file.write(contents)
 
 
@@ -68,7 +68,6 @@ def output_to_text(
         file_path (str): The path to the file to write to.
         data (Dict[str, Dict[str, List[str]]]): The data to export
     """
-    pass
 
 
 def output_to_json(
@@ -80,7 +79,6 @@ def output_to_json(
         file_path (str): The path to the file to write to.
         data (Dict[str, Dict[str, List[str]]]): The data to export
     """
-    pass
 
 
 def output_to_csv(file_path: str, data: Dict[str, Dict[str, List[str]]]) -> None:
@@ -90,7 +88,6 @@ def output_to_csv(file_path: str, data: Dict[str, Dict[str, List[str]]]) -> None
         file_path (str): The path to the file to write to.
         data (Dict[str, Dict[str, List[str]]]): The data to export
     """
-    pass
 
 
 def output_to_xml(file_path: str, data: Dict[str, Dict[str, List[str]]]) -> None:
@@ -100,4 +97,3 @@ def output_to_xml(file_path: str, data: Dict[str, Dict[str, List[str]]]) -> None
         file_path (str): The path to the file to write to.
         data (Dict[str, Dict[str, List[str]]]): The data to export
     """
-    pass
