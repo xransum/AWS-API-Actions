@@ -20,7 +20,7 @@ Install the GeckoDriver for Selenium, currently the only method to do so is to
 run the packages installer command:
 
 ```bash
-poetry run gecko_installer
+poetry run gecko_install
 ```
 
 or you can install by running the function directly:
