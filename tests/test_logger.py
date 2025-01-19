@@ -1,13 +1,14 @@
 import logging
-import pytest
 from io import StringIO
 
+import pytest
+
 from aws_api_actions.logger import (
-    SUCCESS,
-    OUTPUT,
     LOG_COLORS,
-    ActionsFormatter,
+    OUTPUT,
+    SUCCESS,
     ActionsColoredFormatter,
+    ActionsFormatter,
     LoggerWithSuccessAndOutput,
     setup_logging,
 )

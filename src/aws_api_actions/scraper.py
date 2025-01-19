@@ -1,10 +1,11 @@
-import requests
-from bs4 import BeautifulSoup
 from typing import List
 
-from aws_api_actions.logger import logger
+import requests
+from bs4 import BeautifulSoup
+
 from aws_api_actions.constants import USER_AGENT
 from aws_api_actions.geckodriver import is_geckodriver_installed
+from aws_api_actions.logger import logger
 
 
 if is_geckodriver_installed() is False:
@@ -23,14 +24,14 @@ if is_geckodriver_installed() is False:
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.firefox.service import Service
-from selenium.webdriver.firefox.options import Options
 
 from aws_api_actions.geckodriver import (
-    get_geckodriver_binary_path,
     get_firefox_binary_path,
+    get_geckodriver_binary_path,
 )
 
 

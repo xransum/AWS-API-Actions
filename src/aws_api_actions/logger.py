@@ -1,6 +1,8 @@
 import logging
 from typing import Any, cast
+
 from colorlog import ColoredFormatter
+
 
 # Custom logging levels
 SUCCESS = 25  # set between standard INFO: 20 and WARNING:30 level

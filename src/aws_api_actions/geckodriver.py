@@ -1,13 +1,12 @@
-import sys
 import os
-import urllib.request
-import urllib.error
+import sys
 import tarfile
+import urllib.error
+import urllib.request
 import zipfile
 from glob import glob
-from typing import Optional
-
 from io import BytesIO
+from typing import Optional
 
 from aws_api_actions.logger import logger
 
@@ -333,7 +332,9 @@ def install_geckodriver(force: bool = False) -> bool:
     binary_dir = os.path.dirname(geckodriver_binary_path)
 
     if is_geckodriver_installed() is True:
-        logger.info("Geckodriver already installed %s" % geckodriver_binary_path)
+        logger.info(
+            "Geckodriver already installed %s" % geckodriver_binary_path
+        )
 
         if force is True:
             logger.debug(

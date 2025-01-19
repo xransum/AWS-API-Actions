@@ -1,15 +1,14 @@
 # Contributing
 
-Thank you for your interest in improving this project.
-This project is open-source under the **MIT** [license] and
-welcomes contributions in the form of bug reports,
-feature requests, and pull requests.
+Thank you for your interest in improving this project. This project is
+open-source under the **MIT** [license] and welcomes contributions in the form
+of bug reports, feature requests, and pull requests.
 
 Here is a list of important resources for contributors:
 
-- [Source Code]
-- [Issue Tracker]
-- [Code of Conduct]
+-   [Source Code]
+-   [Issue Tracker]
+-   [Code of Conduct]
 
 ## How to Report a Bug
 
@@ -17,19 +16,18 @@ Report bugs on the [Issue Tracker].
 
 When filing an issue, make sure to answer these questions:
 
-- Which operating system and Python version are you using?
-- Which version of this project are you using?
-- What did you do?
-- What did you expect to see?
-- What did you see instead?
+-   Which operating system and Python version are you using?
+-   Which version of this project are you using?
+-   What did you do?
+-   What did you expect to see?
+-   What did you see instead?
 
-The best way to get your bug fixed is to provide a test case,
-and/or steps to reproduce the issue.
+The best way to get your bug fixed is to provide a test case, and/or steps to
+reproduce the issue.
 
 ## How to Request a Feature
 
 Request features on the [file an issue].
-
 
 ## How to Contribute Code
 
@@ -41,11 +39,11 @@ Request features on the [file an issue].
 6. Push your branch.
 7. Open a pull request.
 
-
 <!-- github-only -->
 
 [source code]: https://github.com/xransum/AWS-API-Actions
 [file an issue]: https://github.com/xransum/AWS-API-Actions/issues
 [issue tracker]: https://github.com/xransum/AWS-API-Actions/issues
 [license]: https://github.com/xransum/AWS-API-Actions/blob/main/LICENSE
-[code of conduct]: https://github.com/xransum/AWS-API-Actions/blob/main/CODE_OF_CONDUCT.md
+[code of conduct]:
+    https://github.com/xransum/AWS-API-Actions/blob/main/CODE_OF_CONDUCT.md

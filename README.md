@@ -5,7 +5,7 @@ Compiles and generates datasets for the AWS API actions for all services.
 ## Installation
 
 Clone the repository:
-    
+
 ```bash
 git clone https://github.com/xransum/AWS-API-Actions.git
 ```
@@ -36,26 +36,26 @@ poetry run python
 
 ## Contributing
 
-Contributions are very welcome.
-To learn more, see the [Contributor Guide].
+Contributions are very welcome. To learn more, see the [Contributor Guide].
 
 ## License
 
-Distributed under the terms of the [MIT license][license],
-_AWS-API-Actions_ is free and open source software.
+Distributed under the terms of the [MIT license][license], _AWS-API-Actions_ is
+free and open source software.
 
 ## Issues
 
-If you encounter any problems,
-please [file an issue] along with a detailed description.
+If you encounter any problems, please [file an issue] along with a detailed
+description.
 
 ## Credits
 
-This project was built off of the sweat and tears
-of the the bad actors it was built to fight.
+This project was built off of the sweat and tears of the the bad actors it was
+built to fight.
 
 <!-- github-only -->
 
-[contributor guide]: https://github.com/xransum/AWS-API-Actions/blob/main/CONTRIBUTING.md
+[contributor guide]:
+    https://github.com/xransum/AWS-API-Actions/blob/main/CONTRIBUTING.md
 [file an issue]: https://github.com/xransum/AWS-API-Actions/issues
 [license]: https://github.com/xransum/AWS-API-Actions/blob/main/LICENSE

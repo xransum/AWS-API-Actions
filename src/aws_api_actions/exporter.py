@@ -25,7 +25,7 @@ Example Usage:
     # Import the exporter module
     from exporter import output_to_text, output_to_json, output_to_csv,
         output_to_xml
-    
+
     # Sample data structure
     data = {
         "service_name_1": {
@@ -37,7 +37,7 @@ Example Usage:
             "category_2": "value_2",
         }
     }
-    
+
     # Export data to different formats
     output_to_text(data)
     output_to_json(data)
@@ -83,7 +83,9 @@ def output_to_json(
     pass
 
 
-def output_to_csv(file_path: str, data: Dict[str, Dict[str, List[str]]]) -> None:
+def output_to_csv(
+    file_path: str, data: Dict[str, Dict[str, List[str]]]
+) -> None:
     """Export the data as an csv file.
 
     Args:
@@ -93,7 +95,9 @@ def output_to_csv(file_path: str, data: Dict[str, Dict[str, List[str]]]) -> None
     pass
 
 
-def output_to_xml(file_path: str, data: Dict[str, Dict[str, List[str]]]) -> None:
+def output_to_xml(
+    file_path: str, data: Dict[str, Dict[str, List[str]]]
+) -> None:
     """Export the data as an xml file.
 
     Args:

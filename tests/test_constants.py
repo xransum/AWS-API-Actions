@@ -11,7 +11,7 @@ def test_user_agent() -> None:
     # we're testing it for the sake of testing.
     assert (
         re.match(
-            r"[a-zA-Z0-9\-_.]+(\/[a-zA-Z0-9\-_.]+)?" "(\s\([^\)]+\))*",
+            r"[a-zA-Z0-9\-_.]+(\/[a-zA-Z0-9\-_.]+)?" r"(\s\([^\)]+\))*",
             USER_AGENT,
         )
         is not None
