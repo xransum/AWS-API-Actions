@@ -20,6 +20,8 @@ nox = ">=2020.8.22"
 nox-poetry = "^1.0.3"
 colorlog = "^6.9.0"
 selenium = "^4.27.1"
+blinker = "1.7.0"
+selenium-wire = "^5.1.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.4"
