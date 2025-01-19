@@ -161,7 +161,7 @@ def get_latest_version_number() -> str:
 
     except urllib.error.HTTPError as err:
         logger.error("Failed to fetch latest geckodriver version: %s", err)
-        raise RuntimeError("Failed to fetch latest geckodriver version")
+        raise RuntimeError("Failed to fetch latest geckodriver version") from err
 
     version: str = final_url.split("/")[-1]
     logger.info("Latest geckodriver version is %s", version)
@@ -332,9 +332,7 @@ def install_geckodriver(force: bool = False) -> bool:
     binary_dir = os.path.dirname(geckodriver_binary_path)
 
     if is_geckodriver_installed() is True:
-        logger.info(
-            "Geckodriver already installed %s" % geckodriver_binary_path
-        )
+        logger.info("Geckodriver already installed %s" % geckodriver_binary_path)
 
         if force is True:
             logger.debug(
